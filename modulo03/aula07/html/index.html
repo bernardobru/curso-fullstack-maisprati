@@ -6,9 +6,35 @@
     <!-- <script>
         uma das formas de inserir script
     </script> -->
+    <script>
+        function eventoMouse() {
+            document.write("Evento Aconteceu!")
+        }
+        function eventoTeclado() {
+            document.write("Evento Aconteceu!")
+        }
+        function eventoJanela() {
+            document.write("Evento Aconteceu!")
+        }
+    </script>
 </head>
-<body>
-    <h1>Título 1</h1>
+<body onresize="eventoJanela()" onscroll="eventoJanela()">
     <!-- <input type="submit" value="Clique aqui" onclick="alert('Olá, Mundo!')"> -->
+    <!-- <input type="text" id="nome"  placeholder="Teste"> -->
+    <!-- <script src="../js/script.js"></script> -->
+    <h1>Eventos</h1>
+    <!-- <div style="background-color: cornflowerblue; height: 200px; width: 200px;" onmouseover="eventoMouse()">
+        Clique aqui
+    </div> -->
+    <input type="text" onkeyup="eventoTeclado()">
+    <br>
+    <input type="text" onkeydown="eventoTeclado()">
+    <br>
+    <input type="text" onkeypress="eventoTeclado()">
+    <br>
+    <select onchange="eventoJanela()" onfocus="eventoJanela()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
 </body>
 </html>
