@@ -1,0 +1,37 @@
+div {
+    border: 2px solid;
+}
+#id-div01 p {
+    color: red !important;
+}
+/*O último seletor é o que vale, a não ser que tenha a propriedade !important ao lado, independente se é inline, interno ou externo. O important só serve para a propreidade, não para a regra inteira. Prática ruim*/
+#id-div01 p {
+    color: blue;
+/*Quanto mais específico for o seletor, maior sua prioridade
+Ordem:
+Seletores Universais
+Tipo de Seletores
+Classes seletoras
+Atributos Seletores
+Pseudo-classes
+Seletores ID
+Estilo Inline
+!important(quanto mais especifico for o important, maior sua prioridade)
+*/
+}
+* {
+    color: blue;
+    font-size: x-large;
+}
+h1 {
+    color: red;
+    font-size: small;
+}
+.class-div01 h1 {
+    color: green;
+    font-size: medium;
+}
+h1#titulo-principal {
+    color: rgb(190, 190, 0);
+    font-size: large;
+}

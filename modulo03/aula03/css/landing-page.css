@@ -1,0 +1,54 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(253, 187, 180);
+    margin: 0px;
+}
+header {
+    background-color: rgb(150, 76, 68);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+header a {
+    text-decoration: none;
+    color:rgb(63, 11, 2);
+}
+header a:hover {
+    color: lightcoral;
+    padding: 10px;
+    text-decoration: underline;
+}
+header a:active {
+    color: red;
+}
+main {
+    background-color: salmon;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 0px;
+    height: 100%;
+    max-width: 700px;
+    min-width: 300px;
+}
+main h2 {
+    text-align: center;
+}
+main p {
+    text-align: justify;
+}
+main img {
+    padding: 4px;
+}
+.clear {
+    clear: left;
+}
+
+footer{
+    background-color: rgb(68, 35, 31);
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}

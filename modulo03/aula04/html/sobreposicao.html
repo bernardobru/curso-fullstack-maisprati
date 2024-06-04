@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobreposição</title>
+    <style type="text/css">
+        .conteudo1 {
+            background-color: skyblue;
+            border: 3px solid black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 5;/*quando o numero for maior que de outro elemento, ele irã se sobrepor*/
+        }
+        .conteudo2 {
+            background-color: cornflowerblue;
+            border: 3px solid black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 10;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+        content 1
+    </div>
+    <div class="conteudo2">
+        content 2
+    </div>
+</body>
+</html>

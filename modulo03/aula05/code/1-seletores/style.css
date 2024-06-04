@@ -1,0 +1,34 @@
+* {/*Seletor Global*/
+    background-color: bisque;
+}
+h2 {/*Todos os elementos desta tag serão afetados*/
+    color: red;
+}
+.classe01{/*Todos os elementos pertencentes a esta classe*/
+    border: 2px solid;
+}
+p.classe01  {/*Apenas os parágrafos que pertencem a classe*/
+    background-color: orange;
+}
+p.classe01 > a {
+    background-color: orange;
+}
+div#conteudo {/*Apenas o elemento com o id e todos os elementos filhos */
+    border: 2px dashed green;
+}
+div a {/*Todos os elementos descendentes*/
+    text-decoration: overline;
+}
+li > a {/*Apenas  os elementos filhos*/
+    text-decoration: none;
+    color: slategray;
+}
+div+h2 {/*Apenas os elementos x próximos do primeiro*/
+    background-color: violet;
+}
+h2~p {/*Todos os elementos x após o primeiro*/
+    background-color: brown;
+}
+h2~p > a {
+    background-color: brown;
+}

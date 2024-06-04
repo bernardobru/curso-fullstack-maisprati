@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos inline, block e inline-block</title>
+    <style>
+        /*inline-block é um bloco que se comporta como inline, possuindo margin,
+        como um bloco, mas ocupando o espaço de um elemento inline, pulando
+        para a linha de baixo caso ultrapasse o limite da linha, sendo agora um bloco*/
+        h1 {
+            display: inline-block;
+        }
+        .inlineblock{
+            border: 5px solid green;
+        }
+        .inline{
+            border: 5px solid blue;
+        }
+        .block {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <span class="inline">Inline block Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus! Dolores deleniti natus nostrum eligendi dolorum ducimus recusandae eius itaque nemo numquam veritatis minima explicabo id, repudiandae temporibus est fugit?</span>    
+    <h1 class="inlineblock">Lorem</h1>
+    <p class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo!</p>
+    <table class="inline">
+        <tr class="inline">
+            <th class="inline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit praesentium voluptas, nobis voluptatum adipisci eveniet non qui illum odio, tempora, asperiores harum dolores iusto rerum optio aspernatur quasi officiis!
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes e IDs</title>
+    <style type="text/css">
+        #principal {
+            background-color: rgb(47, 117, 79);
+        }
+        #foco {
+            background-color: crimson;
+            font-weight: bolder;
+        }
+        #topo {
+            border: 5px solid red;
+        }
+        #conteudo{
+            border: 2px solid black;
+        }
+        #rodape {
+            background-color: blue;
+        }
+        #assinatura {
+            background-color: yellow;
+        }
+        .produtos {
+            border: 2px solid rgb(241, 112, 241);
+            font-size: 20px;
+        }
+        .paragrafo {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:link {
+            text-decoration: none;
+            color: rgb(97, 81, 12);
+        }
+        a:visited {
+            color: rgb(127, 219, 219);
+        }
+        a:hover {
+            color: orange;
+            cursor: progress;
+        }
+        a:active {
+            color: purple;
+            text-transform: uppercase;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body id="principal">
+    <h1>Estilo CSS</h1>
+    <div id="topo">
+        <img src="images/yoshi.png" alt="">
+        <ul>
+            <li><a href="https://www.amazon.com">Nome</a></li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+    <div id="conteudo">
+        <div class="produtos">Produto 1</div>
+        <div class="produtos">Produto 2</div>
+        <div>Produto 3</div>
+    </div>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur, <span id="foco">adipisicing elit.</span> Voluptate incidunt sapiente quidem illo odit, sunt corrupti perferendis sed odio quibusdam accusantium maxime ipsam tenetur! Distinctio corrupti voluptatum aut quis nemo.</p>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur autem illum eveniet illo voluptatum, sint beatae aliquid facilis cupiditate necessitatibus vitae tenetur reiciendis! Optio iusto est culpa accusantium aliquam doloremque!</p>
+    <div id="rodape">
+        Todos os direitos reservados &COPY;
+    </div>
+    <span id="assinatura">Bernardo</span>
+</body>
+</html>

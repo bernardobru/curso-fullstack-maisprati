@@ -1,0 +1,141 @@
+/*Estrutura padrão do site*/
+body {
+    background: #f4f2ec url(../images/fundo.png) repeat-x;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
+}
+#container {
+    width: 1080px;
+    margin: auto;
+}
+a:link, a:active, a:visited {
+    color: #af670a;
+}
+a:hover {
+    color: #226115
+}
+/*Logo*/
+#logo h1 {
+    float: left;
+}
+#logo a {
+    width: 280px;
+    height: 21px;
+    background: url('../images/logo.png') no-repeat;
+    display: block;
+    text-indent: -9999px;
+}
+/*Barra de navegação*/
+header {
+    padding: 15px 0;
+    height: 55px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+    float: right;/*Para que a lista vá à direita da página*/
+}
+nav ul li {
+    float: left;
+}
+nav ul li a:link {/*Lhes é atribuido o display block para que possam ter margin e padding, para estilizá-los melhor. Pode colocar estas declarações dentro do li*/
+    display: block;
+    margin-right: 30px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    border-bottom: 1px solid #535858;
+}
+/*Principal*/
+#conteudo {
+    width: 720px;
+    margin-bottom: 20px;
+    float: left;
+}
+article#mapa {
+    float: left;
+    width: 340px;
+    margin-left: 30px;
+}
+article#video {
+    float: left;
+    width: 340px;
+}
+article#exposicoes {
+    float: left;
+    width: 340px;
+}
+article#historia {
+    float: left;
+    width: 340px;
+    margin-left: 30px;
+}
+article#historia p {
+    text-align: justify;
+}
+h3 {
+    color: #227115;
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+h4 {
+    color: #86521a;
+    text-transform: uppercase;
+    padding: 3px;
+    margin-bottom: 0;
+}
+/* Aside */
+aside {
+    width: 350px;
+    float: right;
+}
+section#visita {
+    background-color: #cdc8b1;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+input {
+    background-color: #fff;
+    border: none;
+}
+input.campo {
+    border: 1px solid #ada484;
+}
+input#quantidade {
+    width: 135px;
+}
+input#botao {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #9b9271;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+fieldset {
+    border: none;
+}
+legend {
+    display: none;
+}
+section#galeria {
+    padding: 0 30px 0 30px;
+}
+section#galeria a {
+    display: block;
+    padding: 15px;
+    background: url('../images/fundo-foto.png') no-repeat;
+    float: left;
+}
+/* Footer */
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: url('../images/fundo-rodape.png')no-repeat center top;
+}
+footer>p a {
+    padding: 2px 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static, Relative, Absolute, Fixed</title>
+    <style type="text/css">
+        h1 {
+            position: static;/*por padrão todas as tags sao static*/
+        }
+        p {
+            width: 400px;
+        }
+        div#container {
+            background-color: aliceblue;
+            border: 2px solid black;
+            width: 1000px;
+            margin: auto;
+            padding: 10px;
+            position: relative;
+        }
+        .relativo {
+            border: 3px solid royalblue;
+            position: relative;/*Podem ser movimentados em relaçao a posicão atual*/
+            bottom: 25px;
+            left: 50px;
+            right: 500px;
+        }
+        .absoluto {/*Desloca do fluxo padrão, é baseado no container pai, exemplo, a partir de uma div que nao tenha um posicionamento estático, caso seja estático, é baseado no <body></body>*/
+            border: 3px solid darkslateblue;
+            background-color: blanchedalmond;
+            position: absolute;
+            top: 70px;
+            right: 100px;
+        }
+        .fixo {/*Sai do fluxo padrão, mas, o bloco vai ser fixado em relação a janela do navegador*/
+            border: 3px solid seagreen;
+            background-color: darkgoldenrod;
+            position: fixed;
+            top: 69px;
+            right: 69px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p class="relativo">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni esse, quis facere quasi magnam molestiae quaerat quo odit enim animi deleniti sapiente quibusdam consequatur reiciendis sit excepturi nihil veniam voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis itaque in expedita dolorem vitae! Molestiae, magnam cupiditate vitae quis impedit, hic officia corporis nisi quas accusamus provident maxime, adipisci illo.
+        </p>
+        <p class="absoluto">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda id nobis eum dolorem earum cumque. Asperiores totam temporibus laborum deserunt repellendus a autem in. Veritatis, vitae inventore. Obcaecati, repudiandae assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptas. Impedit, excepturi. Deleniti, autem ullam obcaecati facere, dolore possimus similique error quod, laborum quas totam impedit nam? Dolores, aspernatur architecto.
+        </p>
+        <p class="fixo">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsum dolore possimus in consectetur voluptatem, deleniti necessitatibus labore totam, eos id ipsam quod officiis quaerat laboriosam inventore facilis exercitationem provident! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque magnam odio nemo quidem sed eum, et inventore excepturi cumque, saepe ducimus, dolores ipsam maxime vitae. Facilis sunt necessitatibus molestiae totam.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+ul#perifericos {
+    list-style-type: square;
+}
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style-type: none;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: beige;
+    border: 2px solid black;
+    padding: 5px;
+}
+nav#menu h1 {
+    display: none;
+}

@@ -1,0 +1,54 @@
+body {
+    background-color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+table {
+    background-color: lightcyan;
+    border: 1.5px solid black;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    width: 50%;
+}
+caption {
+    background-color: burlywood;
+    border: 1.5px solid black;
+    border-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+th {
+    background-color: lightcyan;
+    border: 1.5px solid black;
+    padding: 10px;
+    font-size: 36px;
+    text-align: center;
+}
+td {
+    border: 1.5px solid black;
+    border-spacing: 0px;
+    text-align: center;
+}
+tr.linha:hover{
+    background-color: dodgerblue;
+}
+
+tfoot td {
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+a:hover {
+    color: darksalmon;
+    text-decoration: underline;
+}
+a:active {
+    color: brown;
+}

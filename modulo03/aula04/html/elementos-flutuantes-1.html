@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos Flutuantes</title>
+    <style>
+        div.content {
+            background-color: aquamarine;
+            border: 1px solid sienna;
+            width: 150px;
+            height: 150px;
+            float: right;
+         }
+         div.content1 {
+            background-color: cadetblue;
+            border: 1px solid firebrick;
+            width: 150px;
+            height: 150px;
+            float: left;
+         }
+         .clear { /*Usado para limpar os arredores de um elemento rodeado por objetos flutuantes*/
+            clear: right;
+         }
+    </style>
+</head>
+<body>
+    <div class="content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </div>
+    <div class="content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </div>
+    <p class="clear">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque numquam quo cumque ducimus voluptates molestiae, vitae magni similique, temporibus ex ipsum vel. Nesciunt quasi iusto veniam? Ullam aliquam quasi iure?</p>
+</body>
+</html>
