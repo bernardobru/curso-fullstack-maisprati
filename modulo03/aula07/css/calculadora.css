@@ -1,0 +1,21 @@
+table, td {
+    border: 3px solid;
+    padding: 5px;
+}
+
+td input {
+    background: none;
+    width: 3em;
+}
+.botao {
+    background-color: rgb(247, 218, 147);
+    height: 5em;
+    width: 6em;
+}
+#tela {
+    width: 24.75em;
+    height: 3em;
+}
+#zero {
+    width: 19em;
+}
