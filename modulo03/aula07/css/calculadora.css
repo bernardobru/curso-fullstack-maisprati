@@ -4,9 +4,10 @@ table {
 table, td {
     border: 3px solid;
     padding: 5px;
+    border-radius: 10px;
 }
-
 td input {
+    border-radius: 10px;
     background: none;
     width: 3em;
 }
