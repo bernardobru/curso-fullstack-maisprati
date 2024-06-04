@@ -1,3 +1,6 @@
+table {
+    margin: auto
+}
 table, td {
     border: 3px solid;
     padding: 5px;
@@ -13,9 +16,9 @@ td input {
     width: 6em;
 }
 #tela {
-    width: 24.75em;
+    width: 27.45em;
     height: 3em;
 }
 #zero {
-    width: 19em;
+    width: 20.75em;
 }
