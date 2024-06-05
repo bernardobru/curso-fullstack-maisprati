@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript aplicando CSS</title>
+    <style>
+        div {
+            height: 100px;        
+            width: 100px; 
+            border: 2px solid grey; 
+        }
+    </style>
+    <script>
+        function trocaCor(cor) {
+            document.getElementById("body").style.backgroundColor = cor;
+        }
+    </script>
+</head>
+<body id="body">
+    <button type="button" onclick="trocaCor('#f00')">RED</button>    
+    <button type="button" onclick="trocaCor('#0f0')">GREEN</button>    
+    <button type="button" onclick="trocaCor('#00f')">BLUE</button>    
+    <button type="button" onclick="trocaCor('#fff')">DEFAULT</button>    
+</body>
+</html>

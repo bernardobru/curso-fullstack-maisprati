@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mudar classe via JS</title>
+    <style>
+        .div {
+            border: 1px solid;
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+        }
+        .classe {
+            border: 10px solid;
+            background-color: aquamarine;
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+    <script>
+        function mudarForma() {
+            document.getElementById("div").className = 'classe' 
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="mudarForma()">Mudar a forma</button>
+    <button type="button" onclick="voltarForma()">Voltar a forma</button>
+    <div id="div" class="div"></div>
+</body>
+</html>
