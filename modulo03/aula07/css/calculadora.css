@@ -1,0 +1,28 @@
+table {
+    margin: auto;
+    background-color: rgb(255, 240, 222);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.479);
+}
+table, td {
+    border: 3px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+td input {
+    border-radius: 10px;
+    background: none;
+    width: 3em;
+    background-color: #fff;
+}
+.botao {
+    background-color: rgb(247, 218, 147);
+    height: 5em;
+    width: 6em;
+}
+#tela {
+    width: 27.45em;
+    height: 3em;
+}
+#zero {
+    width: 20.75em;
+}
