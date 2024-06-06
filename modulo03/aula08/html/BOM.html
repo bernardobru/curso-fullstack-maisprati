@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <title>Browser Object Model</title>
     <script>
-        function openPopUp() {
-            let janela = window.open('https://google.com', 'nova-janela', 'width=200');
+        let janela;
+        function abrir() {
+            janela = window.open("https://www.github.com", "nova janela","width=400, height=400");
         }
-        function closePopUp() {
-            let janela = window.open('https://google.com', 'nova-janela', 'width=200');
-            window.close(janela);
+        function fechar() {
+            janela.close();
+        }
+        function imprimir() {
+            window.print();
+        }
+        function alturaLarguraNavegador() {
+            let altura = window.screen.availHeight;
+            let largura = window.screen.availWidth;
+            return document.write('<br>A altura é: ' + altura + '<br>' + 'A largura é: ' + largura);
         }
     </script>
 </head>
 <body>
-    <button onclick="openPopUp();">Abrir janela</button>
-    <button onclick="closePopUp()">Fechar janela</button>
-    <button onclick="print()">Imprimir na página</button>
+    <button onclick="abrir();">Abrir janela</button>
+    <button onclick="fechar()">Fechar janela</button>
+    <button onclick="imprimir()">Imprimir página</button>
+    <script>
+        alturaLarguraNavegador();
+    </script>
 </body>
 </html>
