@@ -19,14 +19,49 @@
             let largura = window.screen.availWidth;
             return document.write('<br>A altura é: ' + altura + '<br>' + 'A largura é: ' + largura);
         }
+        window.setTimeout(()=>{document.write('Funções de tempo')}, 2500);
+        let a = 10;
+        let contagemRegressiva = window.setInterval(()=>{
+            document.write(a + '<br>');
+            a--;
+            if (a === 0) {
+                clearInterval(contagemRegressiva);
+            }
+        }, 1000); 
+        const tempo = window.setTimeout(()=>{
+                document.write("BOOOOOOOOOOOOOOOOOM");
+            }, 3000);
+        function paraTeste() {
+            clearTimeout(tempo)
+            document.write('você nos salvou!!!');
+        }
+        let b = 5;
+        const bomba = window.setInterval(()=>{
+            document.write(b);
+            b--;
+            if (b === 0) {
+                document.write("<img src='explosao.jpg'>")
+                clearInterval(bomba);
+            }
+        }, 1000);
     </script>
 </head>
 <body>
-    <button onclick="abrir();">Abrir janela</button>
+    <button onclick="abrir()">Abrir janela</button>
     <button onclick="fechar()">Fechar janela</button>
     <button onclick="imprimir()">Imprimir página</button>
     <script>
         alturaLarguraNavegador();
     </script>
+    <br>
+    <button type="button" onclick="window.location.href = 'https://www.github.com/bernardobru'">GitHub</button>
+    <br>
+    <p><script>document.write(window.location.href)</script></p>
+    <br> -->
+    <p>Você tem 3 segundos para parar impedir da bomba explodir</p>
+    <p>💣</p>
+    <button type="button" onclick="paraTeste()">Clique aqui impedir da bomba explodir</button>
+    <p>A BOMBA VAI EXPLODIIIIIR!!!!!</p>
+    <img src="bomba.webp"> 
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desestruturando objetos</title>
+    <script>
+        /* let filme = ['Senhor dos Anéis', ' Harry Potter ', ' Vingadores', ' Thor ', ' Rambo'];
+        let [a, , b, c, d, e] = filme; */
+        //console.log(a + ',' + b + ',' + c + ',' + d + ',' + e);
+        //console.log(filme);
+        //console.log(a + ' ' + b);
+/*         let coisas = [['abacaxi', 'garfo', 'copo'], ['computador', 'mouse', 'teclado'], ['javascript', 'html', 'css']];
+        let [[a, , b], [ , x, y], [ , , c]] = coisas;
+        console.log(coisas);
+        console.log(a + ' ' + b + ' ' + x + ' ' + y + ' ' + c); */
+let produto = {
+    nome: 'Bicicleta',
+    preco: 1000,
+    detalhes: {
+        fabricante: 'caloi',
+        modelo: 10
+    }
+}
+let {nome, preco} = produto;
+console.log(nome, preco);
+let {nome:a, preco:b} = produto;
+console.log(a, b);
+let {detalhes: {fabricante, modelo}} = produto;
+console.log(fabricante, modelo)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
