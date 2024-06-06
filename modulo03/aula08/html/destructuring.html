@@ -10,24 +10,40 @@
         //console.log(a + ',' + b + ',' + c + ',' + d + ',' + e);
         //console.log(filme);
         //console.log(a + ' ' + b);
-/*         let coisas = [['abacaxi', 'garfo', 'copo'], ['computador', 'mouse', 'teclado'], ['javascript', 'html', 'css']];
+        /*let coisas = [['abacaxi', 'garfo', 'copo'], ['computador', 'mouse', 'teclado'], ['javascript', 'html', 'css']];
         let [[a, , b], [ , x, y], [ , , c]] = coisas;
         console.log(coisas);
         console.log(a + ' ' + b + ' ' + x + ' ' + y + ' ' + c); */
-let produto = {
-    nome: 'Bicicleta',
-    preco: 1000,
-    detalhes: {
-        fabricante: 'caloi',
-        modelo: 10
-    }
-}
-let {nome, preco} = produto;
-console.log(nome, preco);
-let {nome:a, preco:b} = produto;
-console.log(a, b);
-let {detalhes: {fabricante, modelo}} = produto;
-console.log(fabricante, modelo)
+        /* let produto = {
+            nome: 'Bicicleta',
+            preco: 1000,
+            detalhes: {
+                fabricante: 'caloi',
+                modelo: 10
+            }
+        }
+        let {nome, preco} = produto;
+        console.log(nome, preco);
+        let {nome:a, preco:b} = produto;
+        console.log(a, b);
+        let {detalhes: {fabricante, modelo}} = produto;
+        console.log(fabricante, modelo) */
+        /* let array = [10, 20, 30, 40, 50];
+        function destruct([a, b, , c, , d = 60]) {
+            console.log(c, d);
+        }
+        destruct(array);
+        let object = {a: 1, b: 2, c: 3, d: 4}
+        function destruct2({a, b, c, d, e}) {
+            console.log(a, b, e = 10);
+        }
+        destruct2(object); */
+        /* let array = [10, 20, 30, 40, 50];
+        let [a, ...resto] = array;
+        console.log(resto); */
+        let objeto = {a:1, b:2, c:3};
+        let {a, ...resto} = objeto;
+        console.log(resto); 
     </script>
 </head>
 <body>
