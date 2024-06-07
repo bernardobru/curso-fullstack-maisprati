@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de itens</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Cadastro</a>
+            <a href="#">Consulta</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastro de itens no almoxarifado</h1>
+        <ul>
+            <li>
+                <label for="dia">Dia</label>
+                <select id="dia">
+                    <option value="">&nbsp;</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                </select>
+            </li>
+            <li>
+                <label for="mes">Mês</label>
+                <select id="mes">
+                    <option value="">&nbsp;</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                </select>
+            </li>
+            <li>
+                <label for="">Ano</label>
+                <select id="ano">
+                    <option value="">&nbsp;</option>
+                    <option value="">2024</option>
+                </select>
+            </li>
+            <li>
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option value="">&nbsp;</option>
+                    <option value="">Escritório</option>
+                </select>
+            </li>
+            <li id="qual-item">
+                <label for="item">Item</label>
+                <input type="text" id="item">
+                <input type="submit" id="enviar-item">
+            </li>
+            <li id="descricao-item">
+                <label for="descricao">Descrição</label>
+                <input id="descricao">
+                <input type="submit" id="enviar-descricao">
+            </li>
+            <li id="valor-item">
+                <label for="valor">Valor</label>
+                <input type="text" id="valor">
+                <input type="submit">
+            </li>
+            <li id="botao">
+                <button type="submit" id="enviar">+</button>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </main>
+</body>
+</html>

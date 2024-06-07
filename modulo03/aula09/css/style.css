@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+header {
+    background-color: rgb(50,31,115);
+    padding: 20px;
+    margin-top: 0px;
+}
+header nav {
+    margin: auto;
+    width: 75%;
+}
+header nav a:link { 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+header nav a:hover {
+    text-decoration: underline;
+    color: rgb(205, 205, 205);
+    background-color: #653f95;
+    border-radius: 5px;
+}
+main {
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+    background-color: #ececec;
+    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.432);
+}
+main h1 {
+    font-weight: normal;
+    font-size: 2.5em;
+}
+main ul {
+    list-style-type: none;
+}
+main ul li {
+    float: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.clear {
+    clear: both;
+}
+main ul li select {
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+li#qual-item {
+    border: none;
+}
+main ul li input#item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #eee;
+}
+input#enviar-descricao:hover, input#enviar-item:hover {
+    background-color: #aaa;
+}
+input#enviar-descricao:active, input#enviar-item:active {
+    background-color: #eee;
+}
+li#descricao-item {
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+li#descricao-item input#descricao{
+    width: 22em;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #eee;
+}
+li#valor-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-top: 5px;
+}
+li#valor-item input#valor {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #eee;
+}
+li#botao {
+    border: none;
+}
+#enviar:hover {
+    background-color: #aaa;
+}
+#enviar:active {
+    background-color: #eee;
+}
+button#enviar {
+    float: right;
+    border: 1px solid #ddd;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(50,31,115);
+    color: white;
+    border-radius: 5px;
+}
