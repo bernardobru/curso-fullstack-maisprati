@@ -4,14 +4,24 @@ html, body {
     font-family: sans-serif;
     font-weight: bold;
 }
+/* Cabeçalho */
 header {
     background-color: rgb(50,31,115);
     padding: 20px;
     margin-top: 0px;
+    box-shadow: 0 7px 2px rgba(0, 0, 0, 0.432);
 }
 header nav {
     margin: auto;
     width: 75%;
+}
+header nav a#link1 {
+    float: left;
+    margin-left: 200px;
+}
+header nav a#link2 {
+    float: right;
+    margin-right: 200px;
 }
 header nav a:link { 
     color: rgb(255, 255, 255);
@@ -25,8 +35,12 @@ header nav a:hover {
     background-color: #653f95;
     border-radius: 5px;
 }
+header nav a:visited {
+    color: rgb(205, 205, 205);
+}
+/* Conteúdo */
 main {
-    width: 75%;
+    width: 60%;
     margin: auto;
     padding: 15px;
     background-color: #ececec;
@@ -39,6 +53,7 @@ main h1 {
 main ul {
     list-style-type: none;
 }
+/* Formatação dos elementos de data, descrição e valor */
 main ul li {
     float: left;
     padding: 10px;
@@ -63,20 +78,17 @@ main ul li input#item {
     border-radius: 0;
     background-color: #eee;
 }
-input#enviar-descricao:hover, input#enviar-item:hover {
-    background-color: #aaa;
-}
-input#enviar-descricao:active, input#enviar-item:active {
-    background-color: #eee;
-}
 li#descricao-item {
     margin-top: 5px;
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
+    float: left;
+    clear: left;
+    width: 35%;
 }
 li#descricao-item input#descricao{
-    width: 22em;
+    width: 55%;
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
@@ -86,27 +98,47 @@ li#valor-item {
     border: none;
     border-bottom: 1px solid #ddd;
     margin-top: 5px;
+    float: left;
+    width: 35%;
 }
 li#valor-item input#valor {
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     background-color: #eee;
+    width: 40%;
 }
 li#botao {
     border: none;
-}
-#enviar:hover {
-    background-color: #aaa;
-}
-#enviar:active {
-    background-color: #eee;
+    float: right;
 }
 button#enviar {
-    float: right;
     border: 1px solid #ddd;
     padding: 10px 20px 10px 20px;
     background-color: rgb(50,31,115);
     color: white;
     border-radius: 5px;
+}
+/* Rodapé */
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    background-color: #ddd;
+}
+footer p {
+    display: inline;
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #aaa;
 }
