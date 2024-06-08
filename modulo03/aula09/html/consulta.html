@@ -2,20 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro de itens</title>
+    <title>Consulta de dados</title>
+    <link rel="stylesheet" href="../css/consulta.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="home">
+<body id="consulta">
     <header>
         <img id="brasao" src="../images/brasao.png" alt="Brasão de Paverama">
         <nav id="navegacao">
-            <a href="#" id="link1">Cadastro</a>
-            <a href="./consulta.html" id="link2">Consulta</a>
+            <a href="./index.html" id="link1">Cadastro</a>
+            <a href="#" id="link2">Consulta</a>
         </nav>
         <div class="clear"></div>
     </header>
     <main>
-        <h1>Cadastro de itens no almoxarifado</h1>
+        <h1>Consulta de almoxarifado</h1>
         <ul>
             <li>
                 <label for="dia">Dia</label>
@@ -59,15 +60,40 @@
                 <input type="text" id="valor">
             </li>
             <li id="botao">
-                <button type="submit" id="enviar"><img src="../images/icons8-adicionar-50.png" alt="botão para adicionar itens"></button>
+                <button type="submit" id="enviar"><img src="../images/icons8-pesquisar-50.png" alt="botão para pesquisar itens"></button>
             </li>
         </ul>
         <div class="clear"></div>
+        <table>
+            <thead>
+                <div id="tabela">
+                    <tr>
+                        <th class="item">Item</th>
+                        <th>Data</th>
+                        <th>Quantidade</th>
+                        <th class="descricao">Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                                </thead>
+                                <tbody>
+                    <tr>
+                        <td class="item">Joelho 32 mm Tigre</td>
+                        <td>01/12/24</td>
+                        <td>69</td>
+                        <td class="descricao">Joelho para encamamento de 32 mm</td>
+                        <td>R$200,00</td>
+                    </tr>
+                </div>
+                <button id="excluir" type="submit"><img src="../images/icons8-excluir-50.png" alt="excluir itens do almoxarifado"></button>
+            </tbody>
+        </table>
     </main>
     <footer>
         <p>Todos os direitos reservados&copy;</p>
         <p><a href="https://github.com/bernardobru" target="_blank">Sobre o desenvolvedor</a></p>
         <p>Icones por <a href="https://icons8.com.br/" target="_blank">icons8</a></p>
     </footer>
+</body>
+</html>
 </body>
 </html>

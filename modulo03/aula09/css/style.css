@@ -11,16 +11,17 @@ header {
     margin-top: 0px;
     box-shadow: 0 7px 2px rgba(0, 0, 0, 0.432);
 }
+header img#brasao {
+    float: left;
+}
 header nav {
     margin: auto;
     width: 75%;
 }
 header nav a#link1 {
-    float: left;
     margin-left: 200px;
 }
 header nav a#link2 {
-    float: right;
     margin-right: 200px;
 }
 header nav a:link { 
@@ -35,8 +36,11 @@ header nav a:hover {
     background-color: #653f95;
     border-radius: 5px;
 }
+header nav a:active {
+    background-color: #875fb7;
+}
 header nav a:visited {
-    color: rgb(205, 205, 205);
+    color: rgb(255, 255, 255);
 }
 /* Conteúdo */
 main {
@@ -71,12 +75,27 @@ main ul li select {
 }
 li#qual-item {
     border: none;
+    border-bottom: 1px solid #ddd;
+    width: 30%;
+}
+li#quantidade {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 30%;
+}
+li#quantidade input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #eee;
+    width: 55%;
 }
 main ul li input#item {
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     background-color: #eee;
+    width: 60%;
 }
 li#descricao-item {
     margin-top: 5px;
@@ -85,10 +104,10 @@ li#descricao-item {
     border-radius: 0;
     float: left;
     clear: left;
-    width: 35%;
+    width: 60%;
 }
 li#descricao-item input#descricao{
-    width: 55%;
+    width: 75%;
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
@@ -106,28 +125,38 @@ li#valor-item input#valor {
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     background-color: #eee;
-    width: 40%;
+    width: 55%;
 }
 li#botao {
     border: none;
     float: right;
 }
+#botao button img {
+    width: 30px;
+    height: 30px;
+}
 button#enviar {
     border: 1px solid #ddd;
     padding: 10px 20px 10px 20px;
-    background-color: rgb(50,31,115);
+    background-color: #321f73;
     color: white;
     border-radius: 5px;
 }
-/* Rodapé */
+#enviar:hover {
+    background-color: #653f95;
+}
+#enviar:active {
+    background-color: #875fb7;
+}
+    /* Rodapé */
 footer {
     clear: both;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    margin: 20px 0 0 0;
     position: absolute;
     bottom: 0;
-    width: 97%;
+    width: 100%;
     background-color: #ddd;
 }
 footer p {
@@ -135,10 +164,16 @@ footer p {
     padding: 10px;
 }
 footer a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #000;
 }
 footer a:hover {
-    text-decoration: underline;
     color: #aaa;
+}
+#home #navegacao #link1,
+#consulta #navegacao #link2 {
+    background-position: right bottom;
+    background-color: #653f95;
+    color: #fff;
+    border-radius: 5px;
 }

@@ -1,0 +1,39 @@
+button#excluir {
+    background-color: #e45656;
+    border: none;
+    border-radius: 5px;
+}
+#excluir:hover {
+    background-color: #f77878;
+}
+#excluir:active {
+    background-color: #fa9b9b;
+}
+#excluir img {
+    height: 30px;
+    width: 30px;
+}
+button#excluir {
+    float: right;
+}
+table {
+    border-top: 1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding-top: 10px;  
+    padding-bottom: 10px;  
+}
+
+td, th {
+    border-bottom: 1px solid #ddd;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+.descricao {
+    width: 50%;
+}
+.item {
+    width: 25%;
+}
+.tabela {
+    border: 1px solid #ddd;
+}
