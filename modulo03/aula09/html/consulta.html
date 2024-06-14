@@ -5,10 +5,10 @@
     <title>Consulta de dados</title>
     <link rel="stylesheet" href="../css/consulta.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
 </head>
 <body id="consulta">
     <header>
-        <img id="brasao" src="../images/brasao.png" alt="Brasão de Paverama">
         <nav id="navegacao">
             <a href="./index.html" id="link1">Cadastro</a>
             <a href="#" id="link2">Consulta</a>
@@ -18,30 +18,9 @@
     <main>
         <h1>Consulta de almoxarifado</h1>
         <ul>
-            <li>
-                <label for="dia">Dia</label>
-                <select id="dia">
-                    <option value="">&nbsp;</option>
-                    <option value="">01</option>
-                    <option value="">02</option>
-                    <option value="">03</option>
-                </select>
-            </li>
-            <li>
-                <label for="mes">Mês</label>
-                <select id="mes">
-                    <option value="">&nbsp;</option>
-                    <option value="">01</option>
-                    <option value="">02</option>
-                    <option value="">03</option>
-                </select>
-            </li>
-            <li>
+            <li id="data-li">
                 <label for="">Ano</label>
-                <select id="ano">
-                    <option value="">&nbsp;</option>
-                    <option value="">2024</option>
-                </select>
+                <input id="data" type="date">
             </li>
             <li id="qual-item">
                 <label for="item">Item</label>
@@ -51,41 +30,26 @@
                 <label for="qtd-item">Quantidade</label>
                 <input type="number">
             </li>
-            <li id="descricao-item">
-                <label for="descricao">Descrição</label>
-                <input id="descricao">
-            </li>
             <li id="valor-item">
                 <label for="valor">Valor</label>
                 <input type="text" id="valor">
             </li>
             <li id="botao">
-                <button type="submit" id="enviar"><img src="../images/icons8-pesquisar-50.png" alt="botão para pesquisar itens"></button>
+                <button type="submit" id="enviar" onclick="searchItems()"><img src="../images/icons8-pesquisar-50.png" alt="botão para pesquisar itens"></button>
             </li>
         </ul>
         <div class="clear"></div>
         <table>
-            <thead>
-                <div id="tabela">
+                <thead>
                     <tr>
-                        <th class="item">Item</th>
                         <th>Data</th>
+                        <th>Item</th>
                         <th>Quantidade</th>
-                        <th class="descricao">Descrição</th>
                         <th>Valor</th>
                     </tr>
-                                </thead>
-                                <tbody>
-                    <tr>
-                        <td class="item">Joelho 32 mm Tigre</td>
-                        <td>01/12/24</td>
-                        <td>69</td>
-                        <td class="descricao">Joelho para encamamento de 32 mm</td>
-                        <td>R$200,00</td>
-                    </tr>
-                </div>
-                <button id="excluir" type="submit"><img src="../images/icons8-excluir-50.png" alt="excluir itens do almoxarifado"></button>
-            </tbody>
+                </thead>
+                <tbody id="listItems">
+                </tbody>
         </table>
     </main>
     <footer>

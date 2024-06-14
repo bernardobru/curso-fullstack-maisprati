@@ -28,12 +28,3 @@ td, th {
     padding: 0px 10px 0px 10px;
     text-align: center;
 }
-.descricao {
-    width: 50%;
-}
-.item {
-    width: 25%;
-}
-.tabela {
-    border: 1px solid #ddd;
-}
