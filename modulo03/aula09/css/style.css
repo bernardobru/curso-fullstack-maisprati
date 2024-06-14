@@ -73,29 +73,35 @@ main ul li select {
     border-radius: 5px;
     background-color: #ececec;
 }
+li input#data {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #fff;
+}
 li#qual-item {
     border: none;
     border-bottom: 1px solid #ddd;
-    width: 30%;
+    width: 60%;
 }
 li#quantidade {
     border: none;
     border-bottom: 1px solid #ddd;
-    width: 30%;
+    width: 15%;
 }
 li#quantidade input {
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     background-color: #eee;
-    width: 55%;
+    width: 30%;
 }
 main ul li input#item {
     border: none;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     background-color: #eee;
-    width: 60%;
+    width: 90%;
 }
 li#descricao-item {
     margin-top: 5px;

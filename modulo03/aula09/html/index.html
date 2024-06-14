@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Cadastro de itens</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
 <body id="home">
     <header>
@@ -18,48 +19,27 @@
         <h1>Cadastro de itens no almoxarifado</h1>
         <ul>
             <li>
-                <label for="dia">Dia</label>
-                <select id="dia">
-                    <option value="">&nbsp;</option>
-                    <option value="">01</option>
-                    <option value="">02</option>
-                    <option value="">03</option>
-                </select>
-            </li>
-            <li>
-                <label for="mes">Mês</label>
-                <select id="mes">
-                    <option value="">&nbsp;</option>
-                    <option value="">01</option>
-                    <option value="">02</option>
-                    <option value="">03</option>
-                </select>
-            </li>
-            <li>
                 <label for="">Ano</label>
-                <select id="ano">
-                    <option value="">&nbsp;</option>
-                    <option value="">2024</option>
-                </select>
+                <input id="data" type="date">
             </li>
             <li id="qual-item">
                 <label for="item">Item</label>
-                <input type="text" id="item">
+                <input type="text" id="item" placeholder="Item">
             </li>
             <li id="quantidade">
                 <label for="qtd-item">Quantidade</label>
-                <input type="number">
+                <input type="number" id="qtd-item" placeholder="0">
             </li>
             <li id="descricao-item">
                 <label for="descricao">Descrição</label>
-                <input id="descricao">
+                <input id="descricao" type="text" placeholder="Descrição do item">
             </li>
             <li id="valor-item">
                 <label for="valor">Valor</label>
-                <input type="text" id="valor">
+                <input type="text" id="valor" placeholder="R$">
             </li>
             <li id="botao">
-                <button type="submit" id="enviar"><img src="../images/icons8-adicionar-50.png" alt="botão para adicionar itens"></button>
+                <button onclick="registerItem()" type="submit" id="enviar"><img src="../images/icons8-adicionar-50.png" alt="botão para adicionar itens"></button>
             </li>
         </ul>
         <div class="clear"></div>
