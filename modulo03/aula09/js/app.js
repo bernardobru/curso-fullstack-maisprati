@@ -1,11 +1,11 @@
 //constrói um objeto
 //this é referencia a classe
 class Item {
-    constructor (date, item, quantity,value) {
+    constructor (date, item, quantity, value) {
         this.date = date;
         this.item = item;
         this.quantity = quantity;
-        this.value = value;
+        this.valor = value;
     }
     validateData() {//O this é a representação do objeto construido pela classe
         for (let i in this) {        
@@ -20,7 +20,7 @@ class Item {
 class Database {  //JSON é uma string que transmite dados de objetos entre aplicações
     constructor(){//Cria um id automaticamente caso não tenha
         const id = localStorage.getItem('id');
-        if (id === undefined || id === null) {
+        if (id === null) {
             localStorage.setItem('id', 0);
         }
     }
@@ -31,54 +31,47 @@ class Database {  //JSON é uma string que transmite dados de objetos entre apli
     }
     getItems() {
         const items = [];
-        const id = localStorage.getItem('id');//Pega o 'id'
+        //Pega o 'id'
+        const id = localStorage.getItem('id');
         for (let i = 1; i <= id; i++) {
-            const item = JSON.parse(localStorage.getItem(i));//Transforma em objeto
-            if (item === null) {//Se o objeto item for nulo, o loop continua
+            //Transforma em objeto
+            const item = JSON.parse(localStorage.getItem(i));
+            //Se o objeto item for nulo, o loop continua
+            if (item === null) {
                 continue
             }
             item.id = i; //cria um id para o objeto
             items.push(item);//adiciona o item ao array de itens
         }
-        return items
+        return items;
     }
     deleteItem(id) {
         localStorage.removeItem(id);
     }
-    searchItems(items) {
-        let filteredItems = [];
+    //Filtra os itens que sejam iguais às propriedades do objeto
+    searchItems(items) {    
+        let filteredItems = new Array();
         filteredItems = this.getItems();
-        if (items.date !== '') {
-            filteredItems = filteredItems.filter((item) => {//Filtra os itens que sejam iguais às propriedades do objeto
-                item.date === items.date;
-            });
+        if(items.date !== '') {
+            filteredItems = filteredItems.filter(i => i.date === items.date);
         }
-        if (items.item !== '') {
-            filteredItems = filteredItems.filter((item) => {
-                item.item === items.item;
-            });
+        if(items.item !== '') {
+            filteredItems = filteredItems.filter(i => i.item === items.item);
         }
-        if (items.quantity !== '') {
-            filteredItems = filteredItems.filter((item) => {
-                item.quantity === items.quantity;
-            });
+        if(items.quantity !== '') {
+            filteredItems = filteredItems.filter(i => i.quantity === items.quantity);
         }
-        if (items.value !== '') {
-            filteredItems = filteredItems.filter((item) => {
-                item.value === items.value;
-            });
+        if(items.valor !== '') {
+            filteredItems = filteredItems.filter(i => i.valor === items.valor);
         }
         return filteredItems;
     }
 } 
 /* Front-end */
 const database = new Database();
-function getId() {
-    const id = localStorage.getItem('id')
-    return id;
-}
 function getNextId() {
-    const nextId = localStorage.getItem('id');//Pega a chave 'id'
+    //Pega a chave 'id'
+    const nextId = localStorage.getItem('id');
     return parseInt(nextId) + 1;
 }
 function registerItem() {
@@ -90,41 +83,50 @@ function registerItem() {
     if (itemNovo.validateData()) {
         database.createItem(itemNovo);
     }
+    onclick = window.location.reload();
 }
-function loadItems(array) {
-     if(array === undefined) {//Se for igual a zero, nao está sendo feito pesquisas, então carrega todas as informações
-        array = database.getItems()
+function loadItems(items) {
+    //Se for igual a zero, nao está sendo feito pesquisas, então carrega todas as informações
+     if(items === undefined) {
+        items = database.getItems()
     } 
-    const items = database.getItems();
     const listItems = document.getElementById('listItems');
     listItems.innerHTML = '';
     items.forEach((items) => {
-        const row = listItems.insertRow();//Adiciona uma linha da tabela
-        row.insertCell(0).innerHTML = items.date;//insere um valor na célula da tabela
+        //Adiciona uma linha da tabela
+        const row = listItems.insertRow();
+        //insere um valor na célula da tabela
+        row.insertCell(0).innerHTML = items.date;
         row.insertCell(1).innerHTML  = items.item;
         row.insertCell(2).innerHTML = items.quantity;
-        row.insertCell(3).innerHTML = items.value;
-        const button = document.createElement('button');//Cria um botão
-        button.id = items.id;//O id do botão é igual o id dos objetos do array
-        button.innerHTML = 'Excluir item do estoque';//Escreve 'delete' no botão
-        button.onclick = () => {//Quando o botão é clicado:
+        row.insertCell(3).innerHTML = `R$ ${items.valor}`;
+        //Cria um botão
+        const button = document.createElement('button');
+        //O id do botão é igual o id dos objetos do array
+        button.id = items.id;
+        //Escreve 'delete' no botão
+        button.innerHTML = 'Excluir item do estoque';
+        //Quando o botão é clicado:
+        button.onclick = () => {
             const id = items.id;//Armazena-se o id do objeto
             database.deleteItem(id);//O item é removido
             window.location.reload();//A janela da um refresh
         }
-        row.insertCell(4).append(button);//Adiciona o botão à página; append cria um novo nó no DOM
+        //Adiciona o botão à página; append cria um novo nó no DOM
+        row.insertCell(4).append(button);
     });
 } 
 function searchItems() {
-    const date = document.getElementById('data').value;
-    const item = document.getElementById('item').value;
-    const quantity = document.getElementById('qtd-item').value;
-    const value = document.getElementById('valor').value;
+    const date = document.getElementById('data-pesq').value;
+    const item = document.getElementById('item-pesq').value;
+    const quantity = document.getElementById('qtd-item-pesq').value;
+    const value = document.getElementById('valor-pesq').value;
     const itemSearch = new Item(date, item, quantity, value);
     const items = database.searchItems(itemSearch);
     loadItems(items);
 }
-document.addEventListener('DOMContentLoaded', () => {//Acessa o DOM e espera um evento acontecer, se o evento de carregar a página acontecer, executa a função callback
+//Acessa o DOM e espera um evento acontecer, se o evento de carregar a página acontecer, executa a função callback
+document.addEventListener('DOMContentLoaded', () => {
     if(document.body.contains(document.getElementById('listItems'))){
         loadItems();
     }
