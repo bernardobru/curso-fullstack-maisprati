@@ -1,0 +1,28 @@
+.item {
+    width: 200px;
+    /* height: 200px; */
+    margin: 10px;
+    background-color: forestgreen;
+    border: 5px solid;
+    flex-grow: 1;
+    flex-basis: auto;/*define limite */
+    flex-shrink: 1;
+}
+#item4 {
+    width: 200px;
+    /* height: 200px; */
+    margin: 10px;
+    background-color: forestgreen;
+    border: 5px solid;
+    flex-grow: 3;
+}
+#conteudo {
+    background-color: cadetblue;
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}

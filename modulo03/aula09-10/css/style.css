@@ -9,7 +9,7 @@ header {
     background-color: rgb(50,31,115);
     padding: 20px;
     margin-top: 0px;
-    box-shadow: 0 7px 2px rgba(0, 0, 0, 0.432);
+    box-shadow: 0 7px 2px #636363;
 }
 header img#brasao {
     float: left;
@@ -48,7 +48,7 @@ main {
     margin: auto;
     padding: 15px;
     background-color: #ececec;
-    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.432);
+    box-shadow: 7px 7px 2px #636363;
 }
 main h1 {
     font-weight: normal;

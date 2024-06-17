@@ -1,0 +1,68 @@
+/*@keyframes animation-box {
+    from {
+    background: rosybrown;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+} to {
+    background: cadetblue;
+    border-radius: 100px;
+    top: 100px;
+    left: 100px;
+} 
+    0% {
+    top: 0;
+    left: 0;
+}
+30% {
+    top: 50x;
+}
+68%,72% {
+    left: 50px;
+}
+100% {
+    top: 100px;
+    left: 100px;
+} 
+0% {
+    transform: rotate();
+}
+100% {
+    transform: rotate(360deg);
+} 
+}
+#box {
+width: 300px;
+height: 300px;
+background: rosybrown;
+position: relative;
+animation-name: animation-box;
+animation-duration: 1.5s;
+animation-delay: 1s;
+animation-iteration-count: 3;
+animation-direction: alternate; 
+animation: animation-box 1.5s 1s infinite normal;
+animation-timing-function: linear;
+} */
+#box {
+    width: 300px;
+    height: 300px;
+    background-color: wheat;
+}
+#box:hover {
+    /* width: 600px;
+    background-color: chocolate;
+    transition: all 3s; */
+    animation-name: animation-box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes animation-box {
+    0% {
+        transform: rotate();
+    }
+    100% {
+        transform: rotate(360deg);
+    } 
+}
