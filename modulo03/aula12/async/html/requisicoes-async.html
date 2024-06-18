@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         function requisitar(url){
-            document.getElementById('content').innerHTML = ''
+            document.getElementById('content').innerHTML = '';
+            //Se a o elemento 'loading' não estiver na página, cria-se um elemento <img>, se da o id de 'loading' a ele, da uma fonte a ele e por fim o elemento é adicionado à página
             if(!document.getElementById('loading')) {
                 const imgLoading = document.createElement('img');
                 imgLoading.id = 'loading';
@@ -17,12 +18,15 @@
                 document.getElementById('content').appendChild(imgLoading);
             }
             let ajax = new XMLHttpRequest();
+            //O método open() faz uma requisição da url passada como parâmetro da função
             ajax.open('GET', url);
             console.log(ajax.readyState);
             ajax.onreadystatechange = () => {
+                //Se o estado for 4(conexão concluida) e o status for 200(conexões bem sucedidas), o texto será exibido na página
                 if(ajax.readyState == 4 && ajax.status == 200) {
                     document.getElementById('content').innerHTML = ajax.responseText;
                 }
+                //Se o estado for 4(conexão concluída) e o status for 404(arquivo não encontrado), será exibido erro 404
                 if(ajax.readyState == 4 && ajax.status == 404) {
                     document.getElementById('content').innerHTML = 'Erro 404';
                 }

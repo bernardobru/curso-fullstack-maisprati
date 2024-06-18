@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmes>
+    <filme id="1">
+        <titulo>Senhor dos Anéis: Sociedade do Anel</titulo>
+        <sinopse>
+            Numa terra fantástica e única, chamada Terra-Média, um hobbit (seres de estatura entre 80 cm e 1,20 m, com pés peludos e bochechas um pouco avermelhadas) recebe de presente de seu tio o Um Anel, um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso o hobbit Frodo (Elijah Woods) terá um caminho árduo pela frente, onde encontrará perigo, medo e personagens bizarros. Ao seu lado para o cumprimento desta jornada aos poucos ele poderá contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando 9 pessoas que formarão a Sociedade do Anel.
+        </sinopse>
+        <genero>Fantasia</genero>
+        <genero>Ação</genero>
+        <elenco>
+            <atores>Ian McKellen</atores>
+            <atores>Elijah Wood</atores>
+            <atores>Viggo Mortensen</atores>
+        </elenco>
+    </filme>
+    <filme id="2">
+        <titulo>Como Treinar o Seu Dragão</titulo>
+        <sinopse>
+            Na ilha de Berk, os vikings dedicam a vida a combater e matar dragões. Soluço (Jay Baruchel), filho do chefe Stoico (Gerard Butler), não é diferente. Ele sonha em matar um dragão e provar seu valor ao pai, apesar da descrença geral. Um dia, por acaso, ele acerta um dragão que jamais foi visto, chamado Fúria da Noite. Ao procurá-lo, no dia seguinte, Soluço não consegue matá-lo e acaba soltando-o. Só que ele perdeu parte da cauda e, com isso, não consegue mais voar. Soluço passa a trabalhar em um artefato que possa substituir a parte perdida e, aos poucos, se aproxima do dragão. Só que, paralelamente, Stoico autoriza que o filho participe do treino para dragões, cuja prova final é justamente matar um dos animais.
+        </sinopse>
+        <genero>Animação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <atores>Soluço</atores>
+            <atores>Stoico</atores>
+            <atores>Banguela</atores>
+        </elenco>
+    </filme>
+    <filme id="3">
+        <titulo>Vingadores: Ultimato</titulo>
+        <sinopse>
+            Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers e a Viúva Negra/Natasha Romanov precisam liderar a resistência contra o titã louco.
+        </sinopse>
+    </filme>
+    <genero>Ação</genero>
+    <genero>Suspense</genero>
+    <elenco>
+        <atores>Chris Evans</atores>
+        <atores>Robert Downey Jr</atores>
+        <atores>Chris Hemsworth</atores>
+    </elenco>
+</filmes>

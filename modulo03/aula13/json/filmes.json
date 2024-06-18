@@ -1,0 +1,28 @@
+{
+    "filmes": [
+        {
+            "titulo": "Senhor dos Anéis: A Sociedade do Anel",
+            "resumo": "Frodo começa a jornada pra destruir o anel",
+            "generos": [
+                {"genero": "Fantasia"},
+                {"genero": "Aventura"}
+            ],
+            "elenco": [
+                {"ator": "Elijah Wood"},
+                {"ator": "Ian McKellen"}
+            ]
+        },
+        {
+           "titulo": "Vingadores",
+            "resumo": "O Loki invade a terra com alienigenas e destroi Nova York",
+            "generos": [
+                {"genero": "Ação"},
+                {"genero": "Suspense"}
+            ],
+            "elenco": [
+                {"ator": "Robert Downey Jr"},
+                {"ator": "Chris Evans"}
+            ] 
+        }
+    ]
+}
