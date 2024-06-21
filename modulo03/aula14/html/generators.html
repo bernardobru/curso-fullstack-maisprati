@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators</title>
+    <script>
+        function* chat(){
+        //define o primeiro valor a ser retornado
+        let opcao = yield 'eae blz?';
+        //Se o input de resposta for igual a 'blz' 
+        if(opcao === 'blz') {
+            //O próximo retorno será esse
+            yield 'blz man';
+            //opcao vai retornar esse valor
+            opcao = yield 'quer ouvir uma piada?';
+            //Se a opcao for igual a 'blz' ainda
+            if(opcao === 'blz'){
+                //Declara a variável da piada
+                let piada;
+                //Faz uma promise
+                fetch('../json/piadas.json').then(resposta => resposta.json()).then(piadas => {
+                    piada = piadas[Math.floor((Math.random() * 3))];
+                    console.log(piada.piada);
+                });
+                setTimeout(() => {
+                    console.log(piada.resposta);
+                    console.log('KKKKKKKKKKKKKK');
+                }, 2000);
+                }      
+            }
+        }
+      let conversa = chat();
+      function iniciarChat() {
+        let resposta = document.getElementById('resposta').value;
+        //O próximo yield será  retornado no console
+        let iteracao = conversa.next(resposta);
+        console.log(iteracao);
+      }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="iniciarChat()">Piadas</button>
+    <p>Resposta: <input type="text" id="resposta"></p>
+</body> 
+</html>

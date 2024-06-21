@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import</title>
+    <link rel="stylesheet" href="">
+    <script type="module">
+        import { getAddressByCEP } from '../js/lib.mjs';
+        getAddressByCEP('95865000').then(dados => console.log(dados));
+    </script>
+</head>
+<body>
+    <h1>Consultar CEP</h1>
+</body>
+</html>
