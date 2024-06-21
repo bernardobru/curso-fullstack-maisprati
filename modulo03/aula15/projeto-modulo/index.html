@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
     <link rel="stylesheet" href="../projeto-modulo/resources/style/style.css">
+    <script src="resources/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -42,8 +43,42 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quasi labore accusamus non maiores tempore, soluta molestias libero omnis numquam. At provident recusandae distinctio in?</p>
             </aside>
         </section>
+        <section class="segunda-secao primeiro-grid">
+            <div class="conteudo-principal conteudo-grid1">
+                <h2 id="cabecalho-grid">Titulo</h2>
+                <p id="descricao-grid">Descricao</p>
+                <div class="grid">
+                    <article>
+                        <h3>Titulo 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ratione minus inventore. Quibusdam, excepturi nemo.</p>
+                    </article>
+                    <article>
+                        <h3>Titulo 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex repellat, minus earum adipisci suscipit!</p>
+                    </article>
+                    <article>
+                        <h3>Titulo 3</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam enim pariatur porro incidunt neque eius?</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="carrossel">
+            <div class="seta seta-esquerda">
+                <button class="botao-carrossel" onclick="back();">&#x2039;</button>
+            </div>
+                <div id="imagens-carrossel">
+                    <img id="space1" src="./resources/images/lorem-ipsum1.jpg" alt="lorem ipsum">
+                    <img id="space2" src="./resources/images/lorem-ipsum2.jpg" alt="lorem ipsum homer">
+                    <img id="space3" src="./resources/images/lorem-ipsum3.jpg" alt="lorem ipsum chris pratt">
+                </div>
+            <div class="seta seta-direita">
+                <button class="botao-carrossel" onclick="next();">&#x203A;</button>
+            </div>
+        </section>
     </main>
     <!-- ion icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="">
 </body>
 </html>

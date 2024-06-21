@@ -28,6 +28,10 @@ body {
     margin: 0;
     padding: 0;
 }
+main {
+    max-width: 1024px;
+    margin: auto;
+}
 /* menu de navegação */
 nav{
     background-color: var(--color01);
@@ -137,4 +141,49 @@ label {
     padding: 0.75rem;
     border-radius: 15px;
     box-shadow: 5px 5px 5p #000000af;
+}
+/* fim aside */
+/* fim primeira secao */
+/* segunda secao */
+.grid {
+    display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	min-height: 100vh;
+    text-align: justify;
+}
+#cabecalho-grid {
+	margin: 1rem;
+}
+#descricao-grid {
+	padding-bottom: 5rem;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.3rem;
+}
+.grid h3 {
+	font-size: 3rem;
+	position: relative;
+	padding-left: 5rem;
+	padding-bottom: 2rem; 
+}
+/* carrossel */
+#carrossel {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+.imagem {
+    width: 400px;
+}
+.seta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-carrossel {
+    width: 70px;
+    cursor: pointer;
 }
