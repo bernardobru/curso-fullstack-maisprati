@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação por abas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 2em;
+            background-color: #7d6fbb;
+            color: #fff;
+        }
+        header a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.25em;
+        }
+        header a:hover {
+            background-color: #9080da;
+            transition: 0.3s;
+            color: #dfdfdf;
+        }
+        nav {
+            padding-bottom: 2em;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            list-style-type: none;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1em;
+        }
+        ul li button {
+            border: none;
+            background: none;
+            font-size: 1.1em;
+        }
+        #hamburguer{
+            display: none;
+            float: right;
+            background: none;
+            color: #fff;
+            border: none;
+            font-size: 1.9em;
+            cursor: pointer;
+            padding: 0px 5px 0px 5px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        #hamburguer:hover {
+            background-color: #9080da;
+            border-radius: 5px;
+            transition: 0.3s;
+            color: #dfdfdf;
+        }
+        @media only screen and (max-width: 600px) {
+            #hamburguer {
+                display: block;
+            }
+            nav {
+                display: none;
+            }
+            nav.active {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#hamburguer').onclick = () => { 
+                document.querySelector('nav').classList.toggle('active');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Nossa Empresa</h1>
+        <button onclick="menuHamburguer()" id="hamburguer">☰</button>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="requisicao('./content/principal.html')"><a href="">Principal</a></button>
+                </li>
+                <li>
+                    <button onclick="requisicao('./content/servicos.html')"><a href="">Serviços</a></button>
+                </li>
+                <li>
+                    <button onclick="requisicao('./content/sobre.html')"><a href="">Sobre</a></button>
+                </li>
+                <li>
+                    <button onclick="requisicao('./content/contato.html')"><a href="">Contato</a></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="conteudo">
+
+        </div>
+    </main>
+</body>
+</html>

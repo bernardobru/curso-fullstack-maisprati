@@ -1,0 +1,27 @@
+body {
+    background-image: url(imagens/capa.png);
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.menu-principal {
+    display: flex;
+    justify-content: flex-end;
+}
+#primeira-secao {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;  
+}
+#primeira-secao h1 {
+    text-align: center;
+}
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#links button {
+    border: none;
+    border-radius: 20px;
+}
