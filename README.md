@@ -1,2 +1,2 @@
-# Repositório do módulo 3 do Curso FullStack +praTI
-Aqui vão estar os arquivos das aulas do módulo 3
+# Repositório das aulas do Curso FullStack +praTI
+Aqui vão estar todas as aulas do Curso FullStack da maispraTI(menos o módulo 2, porque foi só sobre Git e GitHub)
