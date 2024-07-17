@@ -1,0 +1,25 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    padding: 1em;
+    list-style-type: none;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+}
+article {
+    line-height: 1.5em;
+}
+#news {
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid;
+    padding: 1rem;
+}

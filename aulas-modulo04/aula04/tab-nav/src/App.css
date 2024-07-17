@@ -1,0 +1,7 @@
+header {
+  display: flex;  
+}
+header img {
+    height: 50px;
+    width: 57px;
+}
