@@ -1,4 +1,3 @@
-import classes from './HelloWorld.module.css';
 const livros = ['O Hobbit', 'Harry Potter'];
 function HelloWorld() {
     const livroEscolhido = Math.random() > 0.5 ? livros[0] : livros[1];

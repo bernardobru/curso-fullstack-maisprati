@@ -1,8 +1,11 @@
-import StandardForm from './components/Standard-form';
-import FormTwo from './components/Form-2';
+import UserCard from "./components/UserCard";
+import { useState } from "react";
+const [user, setUser] = useState({name: 'Gandalf', age: 24000}) 
 function App() {
   return (
-    <FormTwo/>
+    <>
+      <UserCard user={user} setUser={setUser}></UserCard>
+    </>
   )
 }
 

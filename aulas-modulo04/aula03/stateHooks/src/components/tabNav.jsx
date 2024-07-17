@@ -1,19 +1,33 @@
 import { useState } from "react";
-function tabNavegate() {
-    const text = [ 
-        
+function tabNavegation() {
+    const content = [
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, repellendus?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, repellendus?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, repellendus?"
     ]
-    const [tabNav, setTabNav] = useState(text.text1);
-    const changeText = (indice) => {
-        setTabNav(text[indice]);
+    const [text, setContent] = useState('firstTab');
+    const handleFirstTab = () => {
+        setContent(content(0));
+    }
+    const handleSecondTab = () => {
+        setContent(content(1));
+    }
+    const handleThirdTab = () => {
+        setContent(content(2));
     }
     return (
         <div>
-            <button onClick={changeText}>Why React?</button>
-            <button onClick={changeText}>Core Features</button>
-            <button onClick={changeText}>Related Resources</button>
-            <button onClick={changeText}>React vs JS</button>
+            <ul>
+                <li id="firstTab" onClick={handleFirstTab}>First Tab</li>
+                <li id="secondTab" onClick={handleSecondTab}>Second Tab</li>
+                <li id="thirdTab" onClick={handleThirdTab}>Third Tab</li>
+            </ul>
+            <div>
+                {if(text === 'firstTab'){
+                    
+                }}
+            </div>
         </div>
-    )
+    );
 }
-export default tabNavegate;
+export default tabNavegation;
