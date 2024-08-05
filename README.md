@@ -1,18 +1,62 @@
-<h1>Repositório das aulas do curso fullstack da +praTI</h1>
-<h2>Assuntos abordados</h2>
-<div align="center">
-	<img width="50" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Git" title="Git"/>
-	<img width="50" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" alt="GitHub" title="GitHub"/> 
-	<img width="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/>
-	<img width="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS"/>
-	<img width="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="JavaScript" title="JavaScript"/>
-    <img width="50" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React" title="React"/>
-	<img width="50" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png" alt="Java" title="Java"/>
-</div>
-<ul>
-    <li><strong>Módulo 1: </strong>Lógica de programação com JavaScript</li>
-    <li><strong>Módulo 2: </strong>Git e GitHub</li>
-    <li><strong>Módulo 3: </strong>Introdução ao desenvolvimento front-end com HTML, CSS e JavaScript</li>
-    <li><strong>Módulo 4: </strong>Introdução ao React.js</li>
-    <li><strong>Módulo 5: </strong>Introdução à linguagem de programação Java</li>
-</ul>
+# Curso Fullstack da +praTI
+
+![Fullstack Junior +praTi](https://img.shields.io/badge/Fullstack-Development-blueviolet)
+![Java](https://img.shields.io/badge/Java-007396)
+![React](https://img.shields.io/badge/React-61DAFB)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F)
+
+## Visão Geral
+
+Este curso é projetado para fornecer habilidades práticas e teóricas em desenvolvimento fullstack, cobrindo tecnologias modernas e ferramentas essenciais para o desenvolvimento web.
+
+### Tecnologias e Ferramentas
+
+- **Frontend:**
+  - **React:** Desenvolvimento de interfaces de usuário modernas e responsivas.
+  - **JavaScript:** Lógica e interatividade do lado do cliente.
+  - **HTML & CSS:** Estruturação e estilização de páginas web.
+
+- **Backend:**
+  - **Java:** Desenvolvimento robusto de aplicativos do lado do servidor.
+  - **Spring Boot:** Framework para construção de aplicações Spring, facilitando a configuração e desenvolvimento.
+  
+- **Bancos de Dados:**
+  - **MySQL:** Sistema de gerenciamento de banco de dados relacional, amplamente utilizado para aplicações web.
+  - **PostgreSQL:** Banco de dados relacional com suporte a operações complexas e extensibilidade.
+
+- **Controle de Versão:**
+  - **Git:** Controle de versão distribuído para acompanhamento de alterações no código.
+
+## Estrutura do Curso
+
+O curso está dividido em módulos que abrangem diversos aspectos do desenvolvimento fullstack:
+
+1. **Introdução ao Desenvolvimento Web:**
+   - Fundamentos de HTML, CSS e JavaScript
+   - Conceitos básicos de desenvolvimento web
+
+2. **Frontend com React:**
+   - Componentes e Estado
+   - Hooks e Context API
+   - Integração com APIs
+
+3. **Fundamentos de Java:**
+   - Sintaxe e Estruturas de Controle
+   - Orientação a Objetos
+   - Collections e Estruturas de Dados
+
+4. **Desenvolvimento Backend com Spring Boot:**
+   - Configuração de Projetos Spring
+   - RESTful APIs
+   - Segurança e Autenticação
+
+5. **Integração de Banco de Dados:**
+   - Modelagem de Banco de Dados
+   - Operações CRUD com MySQL e PostgreSQL
+   - Hibernate e JPA
+
+6. **Práticas de DevOps:**
+   - Controle de Versão com Git
+   - Automatização de Builds e Deploy
