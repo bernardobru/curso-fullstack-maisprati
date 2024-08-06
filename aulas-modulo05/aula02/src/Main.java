@@ -6,56 +6,63 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         /* 1. Convert Celsius to Fahrenheit */
-//        float celsiusDegrees = sc.nextFloat();
-//        float fahrenheitDegrees = (celsiusDegrees * 1.8F) + 32;
-//        System.out.printf("The temperature " + celsiusDegrees + "° in Celsius is " + fahrenheitDegrees + "° in " + "Fahrenheit.");
-//        int age = sc.nextInt();
-//
-//        /* if / else */
-//        if(age < 18) System.out.println("Underage");
-//        else System.out.println("Legal age");
-//
-//        /*if / else can be like this */
-//        if(age >= 18) {
-//            System.out.println("Legal age");
-//        } else {
-//            System.out.println("Underage");
-//        }
-//
-//        /* ternary */
-//        String output = age > 18 ? "Legal age" : "Underage";
-//        System.out.println(output);
-        /* 2. Odd or even */
-//        int num = sc.nextInt();
-//        if(num % 2 == 0) System.out.println("Is even");
-//        else System.out.println("is odd");
+
+        float celsiusDegrees = sc.nextFloat();
+        float fahrenheitDegrees = (celsiusDegrees * 1.8F) + 32;
+        System.out.printf("The temperature " + celsiusDegrees + "° in Celsius is " + fahrenheitDegrees + "° in " + "Fahrenheit.");
+        int age = sc.nextInt();
+
+
+        /* if / else */
+        if(age < 18) System.out.println("Underage");
+        else System.out.println("Legal age");
+
+        /*if / else can be like this */
+        if(age >= 18) {
+            System.out.println("Legal age");
+        } else {
+            System.out.println("Underage");
+        }
+
+        /* ternary */
+        String output = age > 18 ? "Legal age" : "Underage";
+        System.out.println(output);
+
+      /* 2. Odd or even */
+
+        int num = sc.nextInt();
+        if(num % 2 == 0) System.out.println("Is even");
+        else System.out.println("is odd");
+
         /*switch case*/
-//        int dia = sc.nextInt();
-//        switch(dia) {
-//            case 1:
-//                System.out.println("Sunday");
-//                break;
-//            case 2:
-//                System.out.println("Monday");
-//                break;
-//            case 3:
-//                System.out.println("Tuesday");
-//                break;
-//            case 4:
-//                System.out.println("Wednesday");
-//                break;
-//            case 5:
-//                System.out.println("Thursday");
-//                break;
-//            case 6:
-//                System.out.println("Friday");
-//            case 7:
-//                System.out.println("Saturday");
-//                break;
-//            default:
-//                break;
-//        }
+        int dia = sc.nextInt();
+        switch(dia) {
+            case 1:
+                System.out.println("Sunday");
+                break;
+            case 2:
+                System.out.println("Monday");
+                break;
+            case 3:
+                System.out.println("Tuesday");
+                break;
+            case 4:
+                System.out.println("Wednesday");
+                break;
+            case 5:
+                System.out.println("Thursday");
+                break;
+            case 6:
+                System.out.println("Friday");
+            case 7:
+                System.out.println("Saturday");
+                break;
+            default:
+                break;
+        }
+
         /*3. Verify if is leap year*/
+
         System.out.println("Type the year: ");
         int year = sc.nextInt();
         boolean isLeap;
@@ -66,12 +73,8 @@ public class Main {
         } else {
             isLeap = false;
         }
-        String output = isLeap ? "Is a leap year" : "Is not a leap year";
+        output = isLeap ? "Is a leap year" : "Is not a leap year";
         System.out.println(output);
-
-        float celsiusDegrees = sc.nextFloat();
-        float fahrenheitDegrees = (celsiusDegrees * 1.8F) + 32;
-        System.out.printf("A temperature " + celsiusDegrees + "° em Celsius é " + fahrenheitDegrees + "° em " + "Fahrenheit.");
 
         /* 4. Simple calculator */
 
@@ -174,11 +177,11 @@ public class Main {
         /* Factorial */
 
         System.out.println("Type a number and see it factorial");
-        long num = sc.nextLong();
-        long factorial = num;
-        while(num > 1) {
-            factorial = factorial * (num - 1);
-            num--;
+        long num3 = sc.nextLong();
+        long factorial = num3;
+        while(num3 > 1) {
+            factorial = factorial * (num3 - 1);
+            num3--;
         }
         System.out.println(factorial);
 
