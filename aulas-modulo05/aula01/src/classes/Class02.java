@@ -46,9 +46,8 @@ public class Class02 {
 
     public static boolean isLeapYear (int year) {
         if(year % 4 == 0) {
-            if(year % 100 != 0) return true; else return (year % 400 == 0);
             //true if the operation is true, false otherwise
+            if(year % 100 != 0) return true; else return (year % 400 == 0);
         } else return false;
     }
-
 }
