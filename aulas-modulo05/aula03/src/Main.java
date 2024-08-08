@@ -157,5 +157,14 @@ public class Main {
             }
             System.out.println(valueOfMatrix);
         }
+
+        /* Search elements in the matrix */
+
+        int elementSearched = sc.nextInt();
+        for(int[] row : newMatrix) {
+            for(int element : row) {
+                if(element == elementSearched) System.out.println(element);
+            }
+        }
     }
 }
