@@ -1,4 +1,3 @@
-//Converter Celsius para Fahrenheit
 import java.util.Objects;
 import java.util.Scanner;
 
