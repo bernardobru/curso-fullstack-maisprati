@@ -5,6 +5,7 @@ import classes.Class03.Matrices;
 import classes.BankAccount;
 import classes.Class04;
 import classes.Class04;
+import data_structures.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -93,6 +94,26 @@ public class Main {
         //Utils class
         System.out.println("Print a message");
         Class04.Utils.printMessage("Hello, World!");*/
+
+
+        /* Data Structures: List */
+//        List list = new List();
+//        String array = list.toString();
+//        System.out.println(array);
+//        list.add(1);
+//        array = list.toString();
+//        System.out.println(array);
+//        list.add(2);
+//        list.add(3);
+//        list.add(4);
+//        list.add(5);
+//        array = list.toString();
+//        System.out.println(array);
+//        list.remove(2);
+//        array = list.toString();
+//        System.out.println(array);
+//        int element = list.getElement(3);
+//        System.out.println(element);
 
     }
 }
