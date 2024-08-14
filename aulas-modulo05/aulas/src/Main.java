@@ -1,11 +1,12 @@
-import classes.Class01;
-import classes.Class02;
-import classes.Class03.Arrays;
-import classes.Class03.Matrices;
-import classes.BankAccount;
-import classes.Class04;
-import classes.Class04;
-import data_structures.List;
+//import classes.Class01;
+//import classes.Class02;
+//import classes.Class03.Arrays;
+//import classes.Class03.Matrices;
+//import classes.BankAccount;
+//import classes.Class04;
+//import classes.Class04;
+//import data_structures.List;
+import data_structures.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -115,5 +116,9 @@ public class Main {
 //        int element = list.getElement(3);
 //        System.out.println(element);
 
+        /* Data Structures: Linked List */
+        LinkedList linkedList = new LinkedList();
+        linkedList.add(5);
+        
     }
 }
