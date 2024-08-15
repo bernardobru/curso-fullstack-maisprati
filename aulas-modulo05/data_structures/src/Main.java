@@ -58,18 +58,18 @@ public class Main {
         System.out.println(secondClient.name);
         System.out.println(thirdClient.name);
 
-        queue.enqueue(firstClient);
-        queue.enqueue(secondClient);
-        queue.enqueue(thirdClient);
+        queue.enqueue(firstClient.request);
+        queue.enqueue(secondClient.request);
+        queue.enqueue(thirdClient.request);
 
-        Client firstClientServed = queue.dequeue();
-        System.out.println(firstClientServed.name);
+        String firstClientServed = queue.dequeue();
+        System.out.println(firstClientServed);
 
-        Client secondClientServed = queue.dequeue();
-        System.out.println(secondClientServed.name);
+        String secondClientServed = queue.dequeue();
+        System.out.println(secondClientServed);
 
-        Client thirdClientServed = queue.dequeue();
-        System.out.println(thirdClientServed.name);
+        String thirdClientServed = queue.dequeue();
+        System.out.println(thirdClientServed);
 
         //Retorna IllegalStateException
         //queue.dequeue();

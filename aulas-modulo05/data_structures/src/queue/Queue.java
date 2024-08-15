@@ -15,18 +15,18 @@ public class Queue {
 
     //Criação da classe do nó
     public static class Node {
-        Client data;
+        String data;
 
         Node next;
 
-        public Node (Client data) {
+        public Node (String data) {
             this.data = data;
             this.next = null;
         }
     }
 
     //Método para enfileirar/adicionar na fila
-    public void enqueue (Client data) {
+    public void enqueue (String data) {
         Node node = new Node(data);
 
         //Verifica se está vazio
@@ -46,12 +46,12 @@ public class Queue {
     }
 
     //Método para desenfileirar
-    public Client dequeue () {
+    public String dequeue () {
         //verifica se a fila está vazia e retorna um erro
         if (this.isEmpty()) throw new IllegalStateException("Empty queue / no clients");
 
         //Armazena o dado do primeiro nó da fila
-        Client data = this.first.data;
+        String data = this.first.data;
 
         //Move o "ponteiro" para o próximo do antigo primeiro
         this.first = this.first.next;
