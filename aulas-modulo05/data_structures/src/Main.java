@@ -5,6 +5,9 @@ import utils.Product;
 import utils.Client;
 import lists.SimpleLinkedList;
 import queue.Queue;
+import stack.Stack;
+import utils.RevertString;
+
 public class Main {
     public static void main(String[] args) {
         //Instancia o ArrayList
@@ -42,36 +45,62 @@ public class Main {
 
 
         //Exercício com fila e lista
-        Client client1 = new Client("joão", "problema com boleto");
-        Client client2 = new Client("josé", "não recebeu o dinheiro");
-        Client client3 = new Client("carlos", "pedido de divórcio");
-
-        list.add(client1);
-        list.add(client2);
-        list.add(client3);
-
-        Client firstClient = list.get(0);
-        Client secondClient = list.get(1);
-        Client thirdClient = list.get(2);
-
-        System.out.println(firstClient.name);
-        System.out.println(secondClient.name);
-        System.out.println(thirdClient.name);
-
-        queue.enqueue(firstClient.request);
-        queue.enqueue(secondClient.request);
-        queue.enqueue(thirdClient.request);
-
-        String firstClientServed = queue.dequeue();
-        System.out.println(firstClientServed);
-
-        String secondClientServed = queue.dequeue();
-        System.out.println(secondClientServed);
-
-        String thirdClientServed = queue.dequeue();
-        System.out.println(thirdClientServed);
+//        Client client1 = new Client("joão", "problema com boleto");
+//        Client client2 = new Client("josé", "não recebeu o dinheiro");
+//        Client client3 = new Client("carlos", "pedido de divórcio");
+//
+//        list.add(client1);
+//        list.add(client2);
+//        list.add(client3);
+//
+//        Client firstClient = list.get(0);
+//        Client secondClient = list.get(1);
+//        Client thirdClient = list.get(2);
+//
+//        System.out.println(firstClient.name);
+//        System.out.println(secondClient.name);
+//        System.out.println(thirdClient.name);
+//
+//        queue.enqueue(firstClient.request);
+//        queue.enqueue(secondClient.request);
+//        queue.enqueue(thirdClient.request);
+//
+//        String firstClientServed = queue.dequeue();
+//        System.out.println(firstClientServed);
+//
+//        String secondClientServed = queue.dequeue();
+//        System.out.println(secondClientServed);
+//
+//        String thirdClientServed = queue.dequeue();
+//        System.out.println(thirdClientServed);
 
         //Retorna IllegalStateException
         //queue.dequeue();
+
+        /* Pilhas */
+
+        Stack stack = new Stack();
+        /*stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+
+        //Stack overflow error
+        int i = 0;
+        try {
+            while(true) {
+                stack.push(i);
+                i++;
+            }
+        } catch (StackOverflowError error) {
+            System.err.println("Stack overflow " + error);
+        }*/
+        String string = "Bernardo Bruxel";
+        String revertedString = RevertString.revertString(string);
+        System.out.println(revertedString);
     }
 }
