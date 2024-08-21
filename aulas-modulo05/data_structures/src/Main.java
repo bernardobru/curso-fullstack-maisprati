@@ -1,12 +1,10 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Scanner;
-import utils.Product;
+
 import utils.Client;
-import lists.SimpleLinkedList;
 import queue.Queue;
 import stack.Stack;
 import utils.RevertString;
+import tree.BinaryTree;
 
 public class Main {
     public static void main(String[] args) {
@@ -99,8 +97,26 @@ public class Main {
         } catch (StackOverflowError error) {
             System.err.println("Stack overflow " + error);
         }*/
-        String string = "Bernardo Bruxel";
-        String revertedString = RevertString.revertString(string);
-        System.out.println(revertedString);
+//        String string = "Bernardo Bruxel";
+//        String revertedString = RevertString.revertString(string);
+//        System.out.println(revertedString);
+        BinaryTree tree = new BinaryTree();
+
+        tree.add(10);
+        System.out.println(tree.root.value);
+        System.out.println("valor da esquerda da raíz: " + tree.root.left);
+        System.out.println("valor da direita da raíz: " + tree.root.right);
+
+        tree.add(20);
+        System.out.println(tree.root.value);
+        System.out.println("valor da esquerda da raíz: " + tree.root.left);
+        System.out.println("valor da direita da raíz: " + tree.root.right.value);
+
+        tree.add(12);
+        System.out.println(tree.root.value);
+        System.out.println("valor da esquerda da raíz: " + tree.root.left);
+        System.out.println("valor da direita da raíz: " + tree.root.right.value);
+
+
     }
 }

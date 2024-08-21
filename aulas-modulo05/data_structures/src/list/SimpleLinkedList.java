@@ -1,4 +1,4 @@
-package lists;
+package list;
 
 public class SimpleLinkedList {
     //Cria uma inner class representando o nó
