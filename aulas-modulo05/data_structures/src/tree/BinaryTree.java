@@ -53,4 +53,29 @@ public class BinaryTree {
         return current;
     }
 
+    //Método que percorre a árvore e imprime seus dados de forma ordenada
+    public void print (Node current) {
+
+        //
+        if (current != null) {
+
+            //
+            print(current.left);
+
+            //
+            System.out.println(current.value);
+
+            //
+            print(current.right);
+        }
+    }
+
+    //Método para remover
+    public void remove (int data) {
+        this.root = removeRecursive(this.root, data);
+    }
+
+    //Método privado recursivo de remover
+    private Node removeRecursive (Node current, int data);
+
 }

@@ -103,20 +103,27 @@ public class Main {
         BinaryTree tree = new BinaryTree();
 
         tree.add(10);
-        System.out.println(tree.root.value);
+        /*System.out.println(tree.root.value);
         System.out.println("valor da esquerda da raíz: " + tree.root.left);
-        System.out.println("valor da direita da raíz: " + tree.root.right);
+        System.out.println("valor da direita da raíz: " + tree.root.right);*/
 
         tree.add(20);
-        System.out.println(tree.root.value);
+        /*System.out.println(tree.root.value);
         System.out.println("valor da esquerda da raíz: " + tree.root.left);
-        System.out.println("valor da direita da raíz: " + tree.root.right.value);
+        System.out.println("valor da direita da raíz: " + tree.root.right.value);*/
 
         tree.add(12);
-        System.out.println(tree.root.value);
+       /* System.out.println(tree.root.value);
         System.out.println("valor da esquerda da raíz: " + tree.root.left);
-        System.out.println("valor da direita da raíz: " + tree.root.right.value);
+        System.out.println("valor da direita da raíz: " + tree.root.right.value);*/
 
+        tree.add(8);
+
+        tree.add(15);
+
+        tree.add(3);
+
+        tree.print(tree.root);
 
     }
 }
