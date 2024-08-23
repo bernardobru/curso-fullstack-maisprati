@@ -26,6 +26,15 @@ public class Main {
         person.study();
         person.walk();
 
+//      Método de acessar o nome e de modificar o nome
+        String name = person.getName();
+        System.out.println(name);
+
+        person.setName("José");
+
+        String alteredName = person.getName();
+        System.out.println(alteredName);
+
 //      Teste de acesso protected
         ProtectedTest teste = new ProtectedTest();
         teste.teste();

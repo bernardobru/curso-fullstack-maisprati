@@ -26,7 +26,17 @@ public class Person {
         System.out.println("programming...");
     }
 
-//  Métodos acessores e modificadores (getter e setters)
+/*  Métodos acessores e modificadores (getter e setters) */
+
+//  Método de acessar o name
+    public String getName () {
+        return this.name;
+    }
+
+//  Método para alterar o name
+    public void setName (String name) {
+        this.name = name;
+    }
 
 
 
