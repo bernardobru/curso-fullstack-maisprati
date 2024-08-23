@@ -121,7 +121,17 @@ public class Main {
 
         tree.add(15);
 
+        tree.add(13);
+
         tree.add(3);
+
+        tree.print(tree.root);
+
+        tree.remove(3);
+
+        tree.print(tree.root);
+
+        tree.remove(15);
 
         tree.print(tree.root);
 

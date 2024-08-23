@@ -76,6 +76,49 @@ public class BinaryTree {
     }
 
     //Método privado recursivo de remover
-    private Node removeRecursive (Node current, int data);
+    private Node removeRecursive (Node current, int data) {
+
+        //Se o nó atual for nulo, retorna nulo
+        if (current == null) return null;
+
+        //Se o valor for menor que o valor do nó atual, a função é chamada recursivamente para o nó da esquerda
+        if (data < current.value) {
+            current.left = removeRecursive(current.left, data);
+
+        //Se o valor for maior que o valor do nó atual, a função é chamada recursivamente para o nó da direita
+        } else if (data > current.value) {
+            current.right = removeRecursive(current.right, data);
+
+        //Caso contrário
+        } else {
+
+            //Se o nó à esquerda do nó atual e o nó à direita do nó atual forem nulos, retorna nulo
+            if (current.left == null && current.right == null) return null;
+
+            //Se o nó à esquerda do atual for nulo, retorna o nó da direita
+            if (current.left == null) return current.right;
+
+            //Se o nó à direita do atual for nulo, retorna o nó da esquerda
+            if (current.right == null) return current.left;
+
+            //Caso o nó encontrado tenha dois filhos, é chamada um método para encontrar o menor dentre eles
+            int smallest = findSmallest(current.right);
+
+            //O valor do nó atual é o valor de retorno do método de encontrar o menor
+            current.value = smallest;
+
+            //O método é chamado recursivamente para
+            current.right = removeRecursive(current.right, smallest);
+        }
+
+        return current;
+    };
+
+    //Método privado para encontrar o menor valor
+    private int findSmallest (Node current) {
+
+        //Retorna o valor do nó atual se o nó da esquerda for nulo, caso contrário o método é chamada recursivamente até encontrar um nó com o valor à esquerda nulo
+        return current.left == null ? current.value : findSmallest(current.left);
+    }
 
 }
