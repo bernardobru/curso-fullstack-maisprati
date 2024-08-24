@@ -14,7 +14,10 @@ public class Student {
     private int enrollment;
 
 
-    private String[] parentsName;
+    private String[] parentsName = new String[2];
+
+
+    private float grade;
 
 
     public String getName () {
@@ -37,11 +40,6 @@ public class Student {
     }
 
 
-    public String getCpf () {
-        return this.cpf;
-    }
-
-
     public void setCpf (String cpf) {
         this.cpf = cpf;
     }
@@ -52,7 +50,30 @@ public class Student {
     }
 
 
-    public void setEnrollment () {
+    public void setEnrollment (int enrollment) {
+        if (enrollment < 0) throw new RuntimeException("Enrollment value is under 0");
         this.enrollment = enrollment;
+    }
+
+
+    public String[] getParentsName () {
+        return this.parentsName;
+    }
+
+
+    public void setParentsName (String mother, String father) {
+        this.parentsName[0] = mother;
+        this.parentsName[1] = father;
+    }
+
+
+    public float getGrade () {
+        return this.grade;
+    }
+
+
+    public void setGrade (float grade) {
+        if (enrollment < 0) throw new RuntimeException("Grade value is less then 0");
+        this.grade = grade;
     }
 }
