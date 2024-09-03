@@ -1,7 +1,8 @@
 import abstraction.Person;
 import abstraction.ProtectedTest;
 import abstraction.Student;
-import abstraction.BankAccount;
+import encapsulation.BankAccount;
+import encapsulation.BankTransaction;
 import inheritance.Employee;
 import inheritance.Developer;
 import inheritance.Manager;
@@ -76,7 +77,7 @@ public class Main {
         joao.transfer(500F, maria);
         joao.bankStatement();*/
 
-        Developer dev1 = new Developer("Josnei", "01019191155", 6425.23F, "Back-end", LocalDate.of(2014, 5, 30),
+        /*Developer dev1 = new Developer("Josnei", "01019191155", 6425.23F, "Back-end", LocalDate.of(2014, 5, 30),
                 "Java", "Desenvolver aplicações para servidores", 8);
         System.out.println(dev1.getName());
         System.out.println(dev1.getSalary());
@@ -97,7 +98,29 @@ public class Main {
         Enterprise dell = new Enterprise();
         dell.addToPayroll(dev1.getSalary());
         dell.addToPayroll(manager1.getSalary());
-        System.out.println(dell.getPayroll());
+        System.out.println(dell.getPayroll());*/
 
+        BankAccount joao = new BankAccount("4753312", 352.52F);
+        BankAccount maria = new BankAccount("5123123", 739.21F);
+
+        System.out.println(joao.getBalance());
+
+        System.out.println(maria.getBalance());
+
+        BankTransaction deposit = new BankTransaction(joao, 21944.23F, BankTransaction.TransactionType.DEPOSIT);
+
+        deposit.execute();
+
+        System.out.println(deposit.getDetails());
+
+        System.out.println(joao.getBalance());
+
+        BankTransaction withdraw = new BankTransaction(maria, 324.12F, BankTransaction.TransactionType.WITHDRAW);
+
+        withdraw.execute();
+
+        System.out.println(withdraw.getDetails());
+
+        System.out.println(maria.getBalance());
     }
 }
