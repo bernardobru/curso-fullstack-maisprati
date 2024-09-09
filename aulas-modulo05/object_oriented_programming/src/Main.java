@@ -1,14 +1,5 @@
-import abstraction.Person;
-import abstraction.ProtectedTest;
-import abstraction.Student;
-import encapsulation.BankAccount;
-import encapsulation.BankTransaction;
-import inheritance.Employee;
-import inheritance.Developer;
-import inheritance.Manager;
-import inheritance.Enterprise;
-
-import java.time.LocalDate;
+import threads.RunnableThread;
+import threads.Thread;
 
 public class Main {
     public static void main(String[] args) {
@@ -100,7 +91,7 @@ public class Main {
         dell.addToPayroll(manager1.getSalary());
         System.out.println(dell.getPayroll());*/
 
-        BankAccount joao = new BankAccount("4753312", 352.52F);
+        /*BankAccount joao = new BankAccount("4753312", 352.52F);
         BankAccount maria = new BankAccount("5123123", 739.21F);
 
         System.out.println(joao.getBalance());
@@ -121,6 +112,58 @@ public class Main {
 
         System.out.println(withdraw.getDetails());
 
-        System.out.println(maria.getBalance());
+        System.out.println(maria.getBalance());*/
+
+        /*Circle circle = new Circle(5.342123648);
+
+        Rectangle rectangle = new Rectangle(43.12421854976, 31.52367342352);
+
+        double circleArea = circle.area();
+
+        double rectangleArea = rectangle.area();
+
+        System.out.println("Área do círculo: " + circleArea + "cm²");
+
+        System.out.println("Área do retângulo: " + rectangleArea + "cm²");*/
+
+        /*Point point1 = new Point(5, 7);
+        Point point2 = new Point(1, 2);
+
+        System.out.println(point1.x());
+        System.out.println(point1.y());
+
+        System.out.println();
+
+        System.out.println(point2.x());
+        System.out.println(point2.y());
+
+        System.out.println();
+
+        System.out.println(point1);
+        System.out.println(point2);
+
+        System.out.println();
+
+        if (point2.equals(point1)) {
+            System.out.println("Pontos são iguais");
+        } else {
+            System.out.println("Pontos são diferentes");
+        }*/
+
+//        User user = new User("José", "18/12/1975", "098.028.927-11", 11998323433L);
+//
+//        System.out.println(user.name());
+//        System.out.println(user.birthday());
+//        System.out.println(user.cpf());
+//        System.out.println(user.phoneNumber());
+//        System.out.println(user.toString());
+
+        Thread thread = new Thread();
+
+        thread.start();
+
+        java.lang.Thread runnableThread = new java.lang.Thread(new RunnableThread());
+
+        runnableThread.start();
     }
 }
