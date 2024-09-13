@@ -34,4 +34,13 @@ public class BankTransaction implements Transaction {
         return String.format("A %s type transaction of %.2f in the %s account", this.type, this.value,
                 this.account.getAccountNumber());
     }
+
+    @Override
+    public void defaultMethod() {
+        Transaction.super.defaultMethod();
+    }
+
+    public void staticMethod() {
+        Transaction.staticMethod();
+    }
 }
